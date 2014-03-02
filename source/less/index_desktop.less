@@ -1,0 +1,283 @@
+.background_liner_gradient {
+  filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#FF0000, endColorStr=#FFFFFF); /* IE 6 7 8  */
+  background: -ms-linear-gradient(top, #FF0000, #FFFFFF); /* IE 10 */
+  background: -moz-linear-gradient(top, #FF0000, #FFFFFF); /* Firefox 3.6+ */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF0000), to(#FFFFFF)); /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-linear-gradient(top, #283aff, #FFFFFF); /* Safari5.1 Chrome10+ */
+  background: -o-linear-gradient(top, #FF0000, #FFFFFF); /* Opera 11.10+ */
+
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mockup_common {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  overflow: hidden;
+  background-color: #000;
+}
+
+html, body {
+  .background_liner_gradient;
+}
+
+body {
+
+  #wrapper {
+
+    background: #fff url(../img/bg.png);
+    width: 960px;
+    height: 548px;
+    margin: 0 auto;
+    position: relative;
+
+    #join_survey {
+      position: absolute;
+      top: 326px;
+      left: 891px;
+      width: 51px;
+      height: 118px;
+    }
+
+    #dummy_block {
+      position: absolute;
+      background: #B3A570;
+      top: 221px;
+      left: 270px;
+      width: 16px;
+      height: 87px;
+    }
+
+    #left_cloud {
+      position: fixed;
+      background: url(../img/cloud_left.png) no-repeat;
+      background-size: 488px 170px;
+      width: 488px;
+      height: 170px;
+      top: 429px;
+      left: 0px;
+    }
+
+    #right_cloud {
+      background: url(../img/cloud_right.png) no-repeat;
+      position: fixed;
+      width: 242px;
+      height: 161px;
+      top: 437px;
+      right: 0px;
+    }
+
+  }
+
+  .first-mockup {
+    .mockup_common;
+    display: block;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .second-mockup{
+    .mockup_common;
+  }
+
+}
+
+
+// pic-player
+#picWrapper {
+  width: 614px;
+  height: 390px;
+  top: 71px;
+  left: 277px;
+  position: absolute;
+
+
+  .picBox {
+    border: none;
+    display: block;
+    width: 614px;
+    height: 390px;
+    z-index: 1;
+    overflow: hidden;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+
+        .pic_cache {
+          display: none;
+          position: relative;
+          width: 850px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .words {
+    li {
+      position: absolute;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      width: 500px;
+      font-family: 华文楷体;
+      font-size: 20px;
+      font-weight: bold;
+      top: 320px;
+      list-style: none;
+      margin: 0 auto;
+      text-indent: 2em;
+      text-align: left;
+    }
+  }
+
+
+}
+
+.survey, .query, .survey_result {
+  width: 760px;
+  height: 700px;
+  overflow: auto;
+  text-align: left;
+  margin: 0 auto;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -380px;
+  padding: 20px 20px 50px 20px;
+  background-color: #C01815;
+}
+
+// query
+
+.query {
+  display: block;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  height: 300px;
+  margin-top: 100px;
+  border: 3px solid white;
+  border-radius: 50px;
+
+  p {
+
+    margin-top: 100px;
+    font-size: 20px;
+    width: 500px;
+    margin: 0 auto 50px;
+
+  }
+
+}
+
+.survey form {
+  width: 500px;
+  margin: 0 auto;
+  color: #D6A272;
+}
+
+.survey_result .survey_result_content {
+  width: 600px;
+  margin: 0 auto;
+  color: #D6A272;
+}
+
+.survey form div, .survey_result div {
+  padding: 0 20px;
+}
+
+.survey form h3, .survey_result h3 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.question-content div.ng-scope {
+  display: inline-block;
+  width: 250px;
+
+}
+
+.info {
+  display: inline-block;
+  width: 120px;
+}
+
+.reminder {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirm {
+  margin-top: 20px;
+}
+
+.submitBtn, .queryBtn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  background: #da4d42;
+  color: white;
+  background: rgba(218, 77, 66, 1);
+  border-color: #aaa;
+
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.respondent_info > div > input[type="text"] {
+  width: 200px;
+}
+
+.gray {
+  background: #808080;
+}
+
+.submitting {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: white;
+  background: rgba(218, 77, 66, 1);
+  border-color: #aaa;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+  background: #808080;
+}
+
+.submitBtn:hover, .queryBtn:hover {
+  box-shadow: 0 0 3px rgba(255, 255, 255, 1);;
+  border-color: white
+}
+
+.footer {
+  height: 50px;
+  color: #333;
+}
